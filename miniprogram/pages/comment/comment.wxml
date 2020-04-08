@@ -1,0 +1,23 @@
+<!--miniprogram/pages/comment/comment.wxml-->
+<view class="comment">
+
+	<view class="comment-header" wx:if="{{showAddBtn}}">
+		<view  class="comment-header-all" bindtap="uploadImg">
+			<text class="comment-header-add">+</text>
+			<text class="comment-header-text">上传想分享的图片</text>
+		</view>
+	</view>
+
+	<image wx:else src="{{form.img}}" class="comment-img" mode="aspectFit" />
+
+	<view class="comment-body">
+		<textarea class="comment-body-text" placeholder="说说你的故事吧！" bindinput="onInput"></textarea>
+	</view>
+
+
+
+	<view class="comment-footer">
+		<button bindtap="onSave">发表心情</button>
+	</view>
+
+</view>

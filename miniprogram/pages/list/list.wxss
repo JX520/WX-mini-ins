@@ -1,0 +1,56 @@
+/* miniprogram/pages/list/list.wxss */
+
+/** 神评论样式 **/
+.comment-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ebeef3;
+}
+
+.comment-img image{
+  width: 40%;
+  border-radius: 8px;
+  
+  
+}
+
+.comment-main {
+  font-size: 35rpx;
+  margin: 0 0 13rpx;
+  line-height: 1.5;
+}
+
+.comment-quote {
+  width: 28rpx;
+  height: 40rpx;
+}
+
+.comment-quote--left {
+  margin-right: 6rpx;
+}
+
+.comment-quote--right {
+  margin-left: 6rpx;
+}
+
+/** 时间样式 */
+.time {
+  font-size: 25rpx;
+  padding: 16rpx 0 6rpx;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+}
+
+
+.time-hours {
+  margin-left: 10rpx;
+}
+
+.detail {
+ 
+  padding: 0 36rpx;
+  margin-bottom: 88rpx;
+}

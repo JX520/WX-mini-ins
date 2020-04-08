@@ -1,0 +1,22 @@
+<!--miniprogram/pages/list/list.wxml-->
+<scroll-view scroll-y class="wrapper">
+	<view wx:for="{{list}}" wx:key="_id" data-index="{{index}}" class="detail">
+		<view class="time">
+			<text class="time-year">发表于 : {{item.timeInfo.year}}</text>
+			<text class="time-month">/{{item.timeInfo.month}}/</text>
+			<text class="time-date">{{item.timeInfo.date}}/</text>
+			<text class="time-hours">{{item.timeInfo.hours}} : {{item.timeInfo.miniutes}}</text>
+		</view>
+
+		<view class="comment">
+			<image src="../../images/left-quote.png" class="comment-quote comment-quote-left"></image>
+			<text class="comment-main">{{item.comment}}</text>
+			<image src="../../images/right-quote.png" class="comment-quote comment-quote-right"></image>
+		</view>
+		<view class="comment-img">
+			<image src="{{item.img}}" mode="widthFix"></image>
+		</view>
+	</view>
+
+
+</scroll-view>

@@ -1,0 +1,74 @@
+/* miniprogram/pages/comment/comment.wxss */
+page{
+  height: 100%;
+  width: 100%;
+}
+.comment{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.comment-header{
+  
+  width: 100%;
+  flex: 0 0 490rpx;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.comment-header-all{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(230, 172, 194);
+  color: rgb(172, 238, 188);
+  
+}
+
+.comment-img{
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  
+  flex: 0 0 450rpx;
+  margin: 10px;
+  
+}
+.comment-header-add{
+  font-size: 200rpx;
+  line-height: 70px;
+  margin-top: -40rpx;
+}
+.comment-header-text{
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: whitesmoke;
+}
+.comment-body{
+  width: 100%;
+  flex: 1;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.comment-body-text{
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 100%;
+}
+.comment-footer{
+  width: 100%;
+  flex: 0 0 60rpx;
+}
+.comment-footer button{
+  background-color: #66CCCC;
+  color: whitesmoke;
+  font-family: '宋体';
+  height: 60rpx;
+  width: 100%;
+}
