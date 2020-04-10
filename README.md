@@ -1,4 +1,5 @@
-采用云开发的分享ins小程序
+采用云开发的分享ins小程序.
+
 首页
 ![图片](https://github.com/JX520/WX-mini-ins/blob/%E7%AE%80%E7%BA%A6%E7%89%88ins/img/ins-index.jpg)
 
