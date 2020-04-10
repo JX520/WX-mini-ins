@@ -17,7 +17,7 @@
 }
 
 .comment-main {
-  font-size: 35rpx;
+  font-size: 28rpx;
   margin: 0 0 13rpx;
   line-height: 1.5;
 }
@@ -37,11 +37,12 @@
 
 /** 时间样式 */
 .time {
-  font-size: 25rpx;
+  font-size: 20rpx;
   padding: 16rpx 0 6rpx;
   display: flex;
   flex-direction: row;
   margin-bottom: 10rpx;
+  color: gray;
 }
 
 
@@ -53,4 +54,60 @@
  
   padding: 0 36rpx;
   margin-bottom: 88rpx;
+}
+
+.add{
+  position:fixed;
+  width: 380rpx;
+  height: 450rpx;
+  bottom: 0;
+  left: 50%;
+  margin-left: -190rpx;
+}
+.add-item, .add-icon {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 80rpx;
+  left: 50%;
+}
+.add-item{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: tomato;
+  font-size: 30rpx;
+  color: whitesmoke;
+  margin-left: -50rpx;
+  transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1),-webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.add-icon{
+  width: 120rpx;
+  height: 120rpx;
+  background-color: tomato;
+  font-size: 80rpx;
+  color: whitesmoke;
+  margin-left: -60rpx;
+}
+.add-icon-txt{
+  margin-top: -6px;
+}
+.active .add-item:nth-of-type(1){
+transform: rotate(10deg) translateX(-140rpx);
+}
+.active .add-item:nth-of-type(1) .add-item-txt{
+  transform: rotate(-10deg)
+}
+.active .add-item:nth-of-type(2){
+transform: rotate(90deg) translateX(-140rpx);
+}
+.active .add-item:nth-of-type(2) .add-item-txt{
+  transform: rotate(-90deg)
+}
+.active .add-item:nth-of-type(3){
+transform: rotate(170deg) translateX(-140rpx);
+}
+.active .add-item:nth-of-type(3) .add-item-txt{
+  transform: rotate(-170deg)
 }

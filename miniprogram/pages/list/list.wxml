@@ -1,6 +1,6 @@
 <!--miniprogram/pages/list/list.wxml-->
 <scroll-view scroll-y class="wrapper">
-	<view wx:for="{{list}}" wx:key="_id" data-index="{{index}}" class="detail">
+	<view wx:for="{{list}}" wx:key="_id" data-index="{{index}}"  class="detail">
 		<view class="time">
 			<text class="time-year">发表于 : {{item.timeInfo.year}}</text>
 			<text class="time-month">/{{item.timeInfo.month}}/</text>
@@ -9,14 +9,31 @@
 		</view>
 
 		<view class="comment">
+    <text style="font-size:20rpx">{{index+1}}. </text>
 			<image src="../../images/left-quote.png" class="comment-quote comment-quote-left"></image>
 			<text class="comment-main">{{item.comment}}</text>
 			<image src="../../images/right-quote.png" class="comment-quote comment-quote-right"></image>
 		</view>
 		<view class="comment-img">
-			<image src="{{item.img}}" mode="widthFix"></image>
+			<image bindtap="preImg" src="{{item.img}}" mode="widthFix"  ></image>
 		</view>
 	</view>
 
 
 </scroll-view>
+
+<!-- <view class="add {{showToolbar ? 'active' : ''}}">
+  <view class="add-item" bindtap="onAddDigest" data-type="0">
+    <text class="add-item-txt">书摘</text>
+  </view>
+  <view class="add-item" bindtap="onAdd" data-type="1">
+    <text class="add-item-txt">说心情</text>
+  </view>
+  <view class="add-item" bindtap="onList" data-type="2">
+    <text class="add-item-txt">树洞</text>
+  </view>
+  <view class="add-icon" bindtap="onToggle">
+    <text wx:if="{{showToolbar}}" class="add-icon-txt">×</text> 
+    <text wx:else class="add-icon-txt">+</text>
+  </view>
+</view> -->
