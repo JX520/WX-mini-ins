@@ -23,8 +23,8 @@ page{
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: rgb(230, 172, 194);
-  color: rgb(172, 238, 188);
+  background-color: rgb(241, 215, 225);
+  color: rgb(172, 214, 238);
   
 }
 
@@ -46,7 +46,7 @@ page{
 .comment-header-text{
   font-size: 14px;
   letter-spacing: 1px;
-  color: whitesmoke;
+  color: gray;
 }
 .comment-body{
   width: 100%;
@@ -63,12 +63,13 @@ page{
 }
 .comment-footer{
   width: 100%;
-  flex: 0 0 60rpx;
+  flex: 0 0 70rpx;
 }
 .comment-footer button{
   background-color: #66CCCC;
   color: whitesmoke;
   font-family: '宋体';
-  height: 60rpx;
-  width: 100%;
+  height: 90rpx;
+  width: 90%;
+  margin-bottom: 10rpx;
 }
